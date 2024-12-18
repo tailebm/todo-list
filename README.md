@@ -1,29 +1,23 @@
-# todo-list-app
+# To-Do List Application
 
-## Project setup
+Une application simple de gestion de tâches développée avec Vue.js et TypeScript.
 
+## Fonctionnalités
+- Ajouter, modifier, supprimer des tâches.
+- Filtres : Toutes, Complètes, Non Complètes.
+- Statuts : Non débuté, En cours, Fait.
+
+## Installation
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/tailebm/todo-list.git
+
+## Installez les dépendances :
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-
+## Démarrez le serveur local :
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
