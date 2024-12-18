@@ -1,17 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <Header />
+  <TodoList />
 </template>
 
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
+<script lang="ts">
+import { defineComponent } from "vue";
+import TodoList from "./components/TodoList.vue";
+import Header from "./components/Header.vue";
 
-export default {
+export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    Header,
+    TodoList,
   },
-};
+});
 </script>
 
 <style>
@@ -22,5 +25,22 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.logo {
+  width: 100px; /* Ajustez la taille */
+  height: auto;
+  margin-right: 10px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #4caf50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 </style>
